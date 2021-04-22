@@ -14,13 +14,18 @@ class Formatting extends Component{
     }
 
     decreaseIndex(){
-        let temp = this.state.index - 1;
-        this.setState({index: temp})
+        if(this.state.index !=0){
+            let temp = this.state.index - 1;
+            this.setState({index: temp})
+        }
     }
 
     increaseIndex(){
-        let temp = this.state.index + 1;
-        this.setState({index: temp})
+        if(this.state.index != 24){
+            let temp = this.state.index + 1;
+            this.setState({index: temp})
+        }
+
     }
 
 
@@ -35,9 +40,9 @@ class Formatting extends Component{
                         <button onClick={this.decreaseIndex}>{"<"} Previous</button>
                     </div>
                     <div className="mid-box">
-                        <div className="interior-buttons"></div>
-                        <div className="interior-buttons"></div>
-                        <div className="interior-buttons"></div>
+                        <div className="interior-buttons">Edit</div>
+                        <div className="interior-buttons">Delete</div>
+                        <div className="interior-buttons">New</div>
                     </div>
                     <div className="sub-box">
                         <button onClick={this.increaseIndex}>Next {">"}</button>

@@ -6,7 +6,9 @@ import Formatting from './Formatting'
 function App() {
   return (
     <div className="App">
-      <div className="header"></div>
+      <div className="header">
+        <div className="home">Home</div>
+      </div>
       <Formatting/>
     </div>
   );

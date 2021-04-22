@@ -46,6 +46,15 @@
   background-color: rgb(55, 119, 156);
   width: 100vw;
   height: 10vh;
+  text-align: left;
+
+}
+
+.home{
+  position: relative;
+  top: 4vh;
+  left: 4vw;
+  font-weight: 800;
 }
 
 .background{
@@ -103,7 +112,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   height:100%;
   width: 20%;
 
@@ -117,6 +125,9 @@
 }
 
 .interior-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 1px;
   background-color: blue;
   width: 30%;
